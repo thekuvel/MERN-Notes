@@ -1,6 +1,18 @@
 # React Topics
 
 <details>
+  <summary> Folder Structure Details </summary>
+
+  "node_modules" folder:
+  "package.json" file:
+  "package-lock.json" file:
+  "vite.config.js" file:
+  "index.html" file:
+  "main.jsx" or "index.jsx" file :
+  
+</details>
+
+<details>
   <summary> Create React App  </summary>
   
   ```console
@@ -17,8 +29,11 @@ npm run dev //run the react app in local environment
 
 </details>
 
-### React Component
+<br/><br/><br/>
+
+# React Component
 A react component is a jsx(javascript xml), that allows us to write html and JS together. Used to create templates also known as components.
+- Components name start with capital letter
 
 ```jsx
 const StudentCard = ({data}) => {
@@ -47,6 +62,12 @@ StudentCard.propTypes = {
 };
 ```
 
+**Parameter**  
+Here data is called parameter
+```jsx
+  <StudentCard data={data}>
+```
+
 **State**<br/>
 It is a value change causing the re-rendering.<br>
 
@@ -57,7 +78,7 @@ const [count, setCount] = useSate(0)
 "count" is the State that will cause re-rendering when it is changed by setCount.<br/>
 <br/><br/>
 
-**Componenets Life Cycle**<br/>
+## Componenets Life Cycle
 1. Initialization : JS loads the JSX into the memory
 2. Mounting : JSX gets loaded into the RealDOM
 3. Updating : Some contents or state gets updated in the Real Dom
