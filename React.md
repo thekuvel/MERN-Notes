@@ -89,3 +89,69 @@ const [count, setCount] = useSate(0)
 onChange = to capture change in input.<br/>
 onClick = to capture click event.<br/>
 <br/><br/>
+
+## React Router DOM
+Install react router dom in the project folder.
+```console 
+npm i react-router-dom
+```
+<details>
+  <summary>Router and Layout syntax</summary>
+
+  App.jsx
+  ```jsx
+  import './App.css'
+
+  import { BrowserRouter,Routes,Route } from "react-router-dom";
+  
+  import Layout from "./layout/Layout.jsx"
+  import Home from './pages/Home.jsx'
+  
+  function App() {
+  
+    return (
+      <>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout/>}>
+              <Route index element={<Home/>}/>
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </>
+    )
+  }
+  
+  export default App
+  ```
+
+  Layout.jsx
+  ```jsx
+  import {Outlet} from "react-router-dom"
+  
+  function Layout(){
+      return(
+          <>
+  
+              <Outlet/>
+  
+          </>
+      )
+  }
+  
+  export default Layout
+  ```
+
+  Home.jsx
+  
+  ```jsx
+  function Home(){
+      return(<>
+          <h1>HomePage</h1>
+      </>)
+  }
+  
+  export default Home
+  ```
+  
+</details>
