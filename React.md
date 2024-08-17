@@ -155,3 +155,10 @@ npm i react-router-dom
   ```
   
 </details>
+
+Use Navigate
+useNavigate - To NAVIGATE to other page and pass PROPS.
+
+Use Location
+
+Search Params
