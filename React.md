@@ -161,13 +161,124 @@ useNavigate - To NAVIGATE to other page and pass PROPS.
 
 Use Location
 
-Search Params
+<details>
+  <summary>
+    Props drilling and Context
+  </summary>
+
+  **Context**<br>
+  - Creation
+    ```jsx
+    import {createContext} from "react"
+    const ModeContext = createContext(null)
+    ```
+  - Provider
+    ```jsx
+    const [mode,setMode] =  useState("light")
+    <ModeContext.Provider value = {mode, changeMode}>
+      <SubLayout/>
+    </ModeContext.Provider>
+    ```
+  - Subscriber
+    Insede SubLayOut
+    ```jsx
+     const {mode : mode, changeMode} = useContext(ModeContext);
+    ```
+  
+</details>
+
+<details>
+  <summary>
+    Path params and Search Params
+  </summary>
+
+  Path Params
+
+  Search Params
+  
+</details>
+
+<details>
+  <summary>
+    useRef and useReducer
+  </summary>
+
+  <h4>useRef</h4>
+  Do Not use in rendering
+  Hook to access DOM element.  
+  ref.current === e.target (very similar)
+  let ref = useRef(null) 
+  ref.current.style.color = "green"  
+  
+  <h4>useReducer</h4>
+  Reducer is a function used to manipulate a single value in different sccenarios.  
+  
+  ```jsx
+  //Normal way
+
+  function handleMove(move){
+  switch(move){
+    Case "up"
+    if(pos.top !== 0){
+    pos.top = pos.top-100px;
+    }
+    break;
+    Case "dowm"
+    if(pos.top !== 200){
+    pos.top = pos.top+100px;
+    }
+    break;
+  }
+  }
+  ```
+
+  ```jsx
+  // Reducer
+  const moveReducer = (state = {top:0,left:0}, action)=>{
+      switch(action){
+      Case "up"
+      if(state.top !== 0){
+      return {
+        ...state,
+        top: state.top + 100,
+      }
+      }
+      return state
+      Case "down"
+      if(state.top !== 200){
+      return {
+        ...state,
+        top: state.top + 100,
+      }
+      }
+      return state
+  
+    }
+  }
+
+
+  let [pos, dispatch] = useReducer(moveReducer, {top:0, left:0});
+
+  return(
+<>
+<button onClick={()=>dispatch("up")}>UP</button>
+<button onClick={()=>dispatch("down")}>Down</button>
+</>
+)
+  ```
+  
+</details>
+
 
 **_redirects file**
 
-**Axios**
 
-```jsx
+<details>
+  <summary>
+    Axios Example
+  </summary>
+
+  ```jsx
 import axios from "axios";
 
 const instance = axios.create({
@@ -220,3 +331,7 @@ async function EditPassword(cardId,data){
 
 export {GetAllPassword, GetSinglePassword, CreatePassword, DeletePassword, EditPassword}
 ```
+  
+</details>
+
+
