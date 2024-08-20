@@ -337,4 +337,21 @@ export {GetAllPassword, GetSinglePassword, CreatePassword, DeletePassword, EditP
   
 </details>
 
+<h1>Redux</h1>
+React-redux and reduxtoolkit
+
+```console
+npm i @reduxjs/toolkit
+npm i react-redux
+```
+
+- Store
+- Reducer
+- Action
+- Subscribe
+- View
+- Dispatch
+
+
+
 
