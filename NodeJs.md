@@ -38,12 +38,14 @@ Simple express server
 const port = 8000;
 
 import express from "express"
+import cors from "cors"
 import dotenv from "dotenv";
 
 const server  = express()
 dotenv.config();
 
 server.use(express.json()); //To handle JSON data. *Important*
+server.use(cors());
 
 server.get("/", (req,res)=>{
     let {body} = req;
