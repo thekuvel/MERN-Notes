@@ -11,6 +11,11 @@ Global Execution Context
 - Local Execution Scope
   - The functions creates their own scope and perform scoping and execution. 
 
+### Difference betweer var, let and const
+-  var => Hoisting allowed, Global scope, Re-Declaration allowed
+-  let => Hoisting not allowed, Local or Block scope, Re-Declaration not allowed
+
+  
 ### Functions
 - Arrow Function ()=>{}
   ```js
@@ -53,6 +58,16 @@ Global Execution Context
   str = num.toString(2);
   ```
 
+- Json to String
+  ```js
+  let str = Json.stringify(dummyJsonObj);
+  ```
+
+- Json to String
+  ```js
+  let JsonObj = Json.parse(str);
+  ```
+  
 ### Split and Join
 
 - Split -> String to Array
@@ -78,10 +93,56 @@ Global Execution Context
   console.log(num.toFixed(1)); // 4.6
   ```
 
+### Statements
+-  Contitional Statements
+  -  if
+  -  if else
+  -  else if
+  -  nested if
+    
+-  Looping Statements
+  -  while
+  -  doWhile
+  -  for
 
-### .this
-### Spread and Rest
-### Destructuring Array and Object
+- Logical Operators
+  -  AND
+  -  OR
+  -  NOT
+ 
+### Shallow or Deep copy
+
+### Array and Object destructure
 ### Shorthand Property
+### String literals or Template literals
+### OOPS
+### Factory MEthod
+### .this
+### Constructor Functions
+### Proptotypes (To add methods to objects)
 ### Class
+### Four Pillars of OOPS
+-  Abstraction
+-  Encapsulation
+-  Inherittance
+-  Polymorphism
+
+### XML HTTP Requests
 ### MRF
+## DOM Manupulation
+### getElement, querySelector, inner Html, innet text. innertext context
+### Append and append child
+### Onclick, alert, confirm and prompt
+### setTimeout, cleartimeout, setinterval, cleatInterval and events
+## Async Programming
+### Callback - Synchronoys callback
+### Callback - A-Synchronoys callback
+### Callback - Hell
+### Promise
+### Async await
+### Event loop, call stack, micro task queue
+### Fectch (GET,PUT,PATCH,DELETE)
+### 
+### 
+### 
+### 
