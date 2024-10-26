@@ -15,8 +15,9 @@ Global Execution Context
 -  var => Hoisting allowed, Global scope, Re-Declaration allowed
 -  let => Hoisting not allowed, Local or Block scope, Re-Declaration not allowed
 
-  
-### Functions
+<br/>
+
+# Functions
 - Arrow Function ()=>{}
   ```js
     let myFunction = (num1,num2) = {
@@ -40,7 +41,9 @@ Global Execution Context
     })();
     ```
 
-### Data type convertion
+<br/>
+
+# Data type convertion
 - String to Number
   ```js
   let str = "10";
@@ -68,7 +71,9 @@ Global Execution Context
   let JsonObj = Json.parse(str);
   ```
   
-### Split and Join
+<br/>
+
+# Split and Join
 
 - Split -> String to Array
   ```js
@@ -83,8 +88,9 @@ Global Execution Context
   let str = arr.join("-");
   //Output => str = "1-2-3"
   ```
+<br/>
 
-### Fixed decimal numbers toFixed(\<number of decimal places\>)
+# Fixed decimal numbers toFixed(\<number of decimal places\>)
 - toFixed() -> Fixed number of decimal numbers
   ```js
   let num = 2;
@@ -92,8 +98,10 @@ Global Execution Context
   num = 4.6782;
   console.log(num.toFixed(1)); // 4.6
   ```
+  
+<br/>
 
-### Statements
+# Statements
 -  Contitional Statements
   -  if
   -  if else
@@ -109,8 +117,10 @@ Global Execution Context
   -  AND
   -  OR
   -  NOT
+
+ <br/>
  
-### Shallow or Deep copy
+# Shallow or Deep copy
 
 ### Array and Object destructure
 ### Shorthand Property
@@ -121,11 +131,16 @@ Global Execution Context
 ### Constructor Functions
 ### Proptotypes (To add methods to objects)
 ### Class
-### Four Pillars of OOPS
+
+<br/>
+
+# Four Pillars of OOPS
 -  Abstraction
 -  Encapsulation
 -  Inherittance
 -  Polymorphism
+
+<br/>
 
 ### XML HTTP Requests
 ### MRF
