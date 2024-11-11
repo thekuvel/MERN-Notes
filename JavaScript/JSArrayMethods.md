@@ -12,6 +12,14 @@ array.splice(4,0,5) // [1,2,3,4,5,6]
 
 
 ## join
+<p>Join all elements in the array to a single string.</p>
+
+```JavaScript
+const fruits = ['Apple', 'Banana', 'Cherry'];
+const result = fruits.join(' - ');
+console.log(result);  // Output: "Apple - Banana - Cherry"
+
+```
 
 ## shift and unShift
 
