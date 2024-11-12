@@ -69,7 +69,7 @@ function printChars(word,count,times){
 printChars(word,0,3);
 ```
 
-#### Reverse the string
+## Reverse the string
 
 1. Print the word from reverse
 2. Two pointer technique
