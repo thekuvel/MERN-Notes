@@ -113,3 +113,64 @@ let word = "apple";
 reverse(word);
 
 ```
+
+## Palindrome
+
+1. Recursion Method
+
+```JavaScript
+
+let word = "malayalam"
+
+function reverse(word){
+	if (word == "") return word;
+	return reverse(word.slice(1,)) + word.charAt(0)
+}
+
+function isPalindrome(word){
+	if (word === reverse(word)){
+		console.log(" It is Palindrome")
+	} else {
+		console.log(" It is not Palindrome");
+	}
+}
+
+isPalindrome(word);
+
+```
+
+2. Two pointer method
+
+```JavaScript
+
+let word = "malayalam";
+
+function tpPalindrome(word){
+	let first = 0;
+	let last = word.length-1;
+
+	while(first<last){
+		if (word[first] !== word[last]){
+			return false;
+		}
+		first++;
+		last--;
+	}
+
+	return  true;
+}
+
+function checkPalindrome(word){
+	if(tpPalindrome(word)){
+		console.log(" It is Palindrome")
+	} else {
+		console.log(" It is not Palindrome");
+	}
+}
+
+checkPalindrome(word);
+
+```
+
+### Longest palindrome in substring
+
